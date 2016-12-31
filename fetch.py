@@ -4,7 +4,7 @@ import boto3
 
 def sync_image_folder():
 
-	app_path = os.path.join(os.path.sep, 'home', 'pi', 'apps', 'photoview')
+	app_path = os.path.join(os.path.sep, 'home', 'pi', 'apps', 'photoviewer')
 	print ('App path: %s' % app_path)
 
 	config_file_path = os.path.join(app_path, 'config', 'aws')
