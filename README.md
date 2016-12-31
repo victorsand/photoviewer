@@ -33,3 +33,10 @@ The script is contained in `buttons.py` and runs on startup as described below.
 ## Automation
 
 Setting up this on a Raspberry Pi and get it to run automatically on boot proved to be a little tricky. The Python library for S3 interaction, boto3, gave me some troubles with credentials when running the scripts as root from crontab, and the Python script for controlling the GPIO buttons demands root access. I ended up with the following setup:
+
+# init.d script for GPIO
+
+# cronjob for updated every day and every reboot
+
+
+
