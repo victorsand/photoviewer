@@ -22,4 +22,14 @@ Placed at `/home/pi/apps/photoviewer/config/aws`, with the following contents:**
 Containing your own region, bucket name, AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY values.
 
 **4. Run the script**
-Execute `/home/pi/apps/photoviewer/slideshow.sh` which will launch the Python program that sync with the S3 bucket, and then fires up the slideshow.
+Execute `/home/pi/apps/photoviewer/slideshow.sh` which will launch the Python program that syncs with the S3 bucket, and then fires up the slideshow.
+
+## GPIO Buttons
+
+The Raspberry Pi lacks a power button, so I decided to add one. I also added a restart button and an extra button for killing the slideshow app while I was at it! This is not strictly neccessary, but could be useful if running on a non-touch screen for example.
+
+The script is contained in `buttons.py` and runs on startup as described below.
+
+## Automation
+
+Setting up this on a Raspberry Pi and get it to run automatically on boot proved to be a little tricky. The Python library for S3 interaction, boto3, gave me some troubles with credentials when running the scripts as root from crontab, and the Python script for controlling the GPIO buttons demands root access. I ended up with the following setup:
