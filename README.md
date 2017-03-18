@@ -12,7 +12,7 @@ Simple app for showing a slideshow of images fetched from an Amazon S3 bucket. L
 If you choose `/home/pi/apps/photoviewer`, you won't have to change any hardcoded values.
 
 **3. Create a four-line config file**
-Placed at `/home/pi/apps/photoviewer/config/aws`, with the following contents:**
+Placed at `/home/pi/apps/photoviewer/config/aws`, with the following contents:
 
 	eu-central-1
 	myBucketName
