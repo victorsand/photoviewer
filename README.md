@@ -36,7 +36,11 @@ Setting up this on a Raspberry Pi and get it to run automatically on boot proved
 
 # init.d script for GPIO
 
+TODO
+
 # cronjob for updated every day and every reboot
+
+TODO
 
 
 
