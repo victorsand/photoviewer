@@ -21,7 +21,10 @@ Placed at `/home/pi/apps/photoviewer/config/aws`, with the following contents:
 
 Containing your own region, bucket name, AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY values.
 
-**4. Run the script**
+**4. Install dependencies**
+`pip install boto3`
+
+**5. Run the script**
 Execute `/home/pi/apps/photoviewer/slideshow.sh` which will launch the Python program that syncs with the S3 bucket, and then fires up the slideshow.
 
 ## GPIO Buttons
