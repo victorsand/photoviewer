@@ -46,9 +46,13 @@ Setting up this on a Raspberry Pi and get it to run automatically on boot proved
 
 TODO
 
-# cronjob for updated every day and every reboot
+# cronjob for updates on reboot
 
-TODO
+Not the sudo crontab!
+`crontab -e`
+Add the line `@reboot export DISPLAY:=0 && /home/pi/apps/photoviewer/slideshow.sh` 
+
+
 
 
 
