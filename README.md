@@ -54,7 +54,7 @@ With `crontab -e` add the line `@reboot export DISPLAY:=0 && /home/pi/apps/photo
 
 I use this and a simple timer for the outlet to turn off the Pi first at 22:00, then the power (say an hour later) and then wake it up again in the morning at 07:00 or so.
 
-With `sudo crontab -e` add the line 0 22 * * * /sbin/shutdown now`
+With `sudo crontab -e` add the line 0 22 * * * `/sbin/shutdown now`
 
 
 
