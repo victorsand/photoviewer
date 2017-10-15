@@ -48,9 +48,13 @@ TODO
 
 # cronjob for updates on reboot
 
-Not the sudo crontab!
-`crontab -e`
-Add the line `@reboot export DISPLAY:=0 && /home/pi/apps/photoviewer/slideshow.sh` 
+With `crontab -e` add the line `@reboot export DISPLAY:=0 && /home/pi/apps/photoviewer/slideshow.sh` 
+
+# cronjob for automatic shutdown
+
+I use this and a simple timer for the outlet to turn off the Pi first at 22:00, then the power (say an hour later) and then wake it up again in the morning at 07:00 or so.
+
+With `sudo crontab -e` add the line 0 22 * * * /sbin/shutdown now`
 
 
 
